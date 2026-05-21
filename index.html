@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leslie Logistics</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsiveness.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=check_circle" />
+</head>
+<body>
+    <!-- <header>
+        <nav>
+            <a href="#">Leslie<span>.</span>Logistics</a>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">TRACK</a></li>
+                <li><a href="#">REVIEWS</a></li>
+                <li><button>GET A QUOTE</button></li>
+            </ul>
+        </nav>
+    </header> -->
+
+    <header>
+    <nav>
+        <a href="#">Leslie<span>.</span>Logistics</a>
+    </nav>
+
+    <!-- HAMBURGER — hidden on desktop, visible on mobile -->
+  <button class="menu-toggle" id="menuToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- DARK OVERLAY behind drawer -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+    <nav class="main-nav" id="mainNav">
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#stats-section">ABOUT US</a></li>
+            <li><a href="#who-we-are">SERVICES</a></li>
+            <li><a href="#quote-section">TRACK</a></li>
+            <li><a href="#">REVIEWS</a></li>
+            <li><button>GET A QUOTE</button></li>
+        </ul>
+    </nav>
+</header>
+    <section id="home">
+        <div>
+            <h2>TRUSTED FREIGHT AND SHIPPING PARTNER</h2>
+            <b><span>MOVE FREIGHTS FASTER,</span><br> SMARTER AND SAFER</b>
+            <p>Leslie Logistics delivers reliable freight and shipping solutions across the globe. From door-to-door delivery to complex supply chain management - we keep our cargo moving.</p>
+        </div>    
+        <div>   
+            <button>GET A FREE QUOTE</button>
+            <button>TRACK SHIPMENT</button>
+        </div>
+    </section>
+    <section class="stats-section" id="stats-section">
+        <div class="stats-container">
+
+    <div class="stats-header">
+      <div class="eyebrow">Our Numbers Speak</div>
+      <h2>Trusted by thousands <span>and proven every mile...</span></h2>
+      <p>Trusted by businesses worldwide for freight that moves on time, every time.</p>
+    </div>
+
+    <div class="stats-grid">
+
+      <div class="stat-card" data-target="5600" data-suffix="+" data-decimals="0">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" viewBox="0 0 24 24" fill="none" stroke="#ff6a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="9 12 11 14 15 10"/>
+</svg> -->
+        <span class="material-symbols-outlined" id="stat-icon">
+
+</span>
+        <div class="stat-number-wrap">
+          <div class="stat-number">0</div>
+          <div class="stat-suffix">+</div>
+        </div>
+        <div class="stat-label">Shipments Delivered</div>
+        <div class="stat-desc">Successfully fulfilled orders across land, sea & air</div>
+      </div>
+
+      <div class="stat-card" data-target="50" data-suffix="+" data-decimals="0">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ff6a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="12" r="10"/>
+  <line x1="2" y1="12" x2="22" y2="12"/>
+  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+</svg>
+        <div class="stat-number-wrap">
+          <div class="stat-number">0</div>
+          <div class="stat-suffix">+</div>
+        </div>
+        <div class="stat-label">Countries Served</div>
+        <div class="stat-desc">A global network of trusted partners & carriers</div>
+      </div>
+
+      <div class="stat-card" data-target="99.8" data-suffix="%" data-decimals="1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ff6a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="12" cy="13" r="8"/>
+  <polyline points="12 9 12 13 15 15"/>
+  <line x1="9" y1="2" x2="15" y2="2"/>
+  <line x1="12" y1="2" x2="12" y2="5"/>
+</svg>
+        <div class="stat-number-wrap">
+          <div class="stat-number">0</div>
+          <div class="stat-suffix">%</div>
+        </div>
+        <div class="stat-label">On-Time Delivery</div>
+        <div class="stat-desc">Industry-leading reliability you can count on</div>
+      </div>
+
+      <div class="stat-card" data-target="15" data-suffix=" Yrs" data-decimals="0">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ff6a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <polyline points="8 21 12 21 16 21"/>
+  <line x1="12" y1="17" x2="12" y2="21"/>
+  <path d="M7 4H17V11C17 13.76 14.76 16 12 16C9.24 16 7 13.76 7 11V4Z"/>
+  <path d="M7 6H4C4 6 4 11 7 11"/>
+  <path d="M17 6H20C20 6 20 11 17 11"/>
+</svg>
+        <div class="stat-number-wrap">
+          <div class="stat-number">0</div>
+          <div class="stat-suffix"> yrs</div>
+        </div>
+        <div class="stat-label">Industry Experience</div>
+        <div class="stat-desc">Over a decade of logistics expertise & excellence</div>
+      </div>
+
+    </div>
+
+    <div class="stats-bottom">
+      <span>Leslie Logistics</span>
+      <div class="dot"></div>
+      <span>Est. 2009</span>
+      <div class="dot"></div>
+      <span>Certified & Insured</span>
+      <div class="dot"></div>
+      <span>Designed by Victor Leslie</span>
+    </div>
+
+  </div>
+    </section>
+
+    <section style="background:#111;">
+  <div class="who-we-are" id="who-we-are">
+
+    <!-- LEFT -->
+    <div class="who-left fade-up">
+      <span class="eyebrow">Who We Are</span>
+      <h2>Providing Full Range Of <span>Freight Solutions</span></h2>
+      <p>Leslie Logistics is a trusted freight and shipping company dedicated to moving cargo reliably across the globe. We specialize in seamless supply chain management, ensuring your goods reach their destination safely and on time.</p>
+      <p>With over 15 years in the logistics industry, we combine deep expertise with modern technology to deliver end-to-end solutions tailored to your business needs — from small parcels to full container loads.</p>
+      <div class="who-left-btns">
+        <a href="#" class="btn-primary">Discover More</a>
+        <div class="call-info">
+          <div class="call-icon">
+            <svg fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z"/>
+            </svg>
+          </div>
+          <div class="call-text">
+            <small>Call Us Anytime</small>
+            <strong>+234 808 229 9961</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="who-right fade-up">
+      <img class="who-img-main" src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7?w=800&q=80" alt="Leslie Logistics shipping containers">
+      <div class="who-img-badge">
+        <div class="badge-num">15+</div>
+        <div class="badge-label">Years Of Experience</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="hiw-main" style="background:#111;">
+  <div class="hiw-section">
+ 
+    <!-- HEADER -->
+    <div class="hiw-header">
+      <div class="eyebrow">Our Process</div>
+      <h2>How It <span>Works</span></h2>
+      <p>Getting your freight delivered with Leslie Logistics is simple, transparent, and stress-free. Here's our proven process from quote to delivery.</p>
+    </div>
+ 
+    <!-- STEPS -->
+    <div class="steps-wrapper">
+ 
+      <!-- STEP 1 — LEFT -->
+      <div class="step-row left">
+        <div class="step-content">
+          <h3>Request a Quote</h3>
+          <p>Contact us with your shipment details — origin, destination, cargo type and weight. We'll provide a fast, competitive quote tailored to your needs.</p>
+        </div>
+        <div class="hex-wrap">
+          <div class="hexagon">
+            <svg class="hex-bg" viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="50,2 98,27 98,88 50,113 2,88 2,27" fill="#ff6a00" stroke="rgba(255,106,0,0.3)" stroke-width="1"/>
+            </svg>
+            <div class="hex-inner">
+              <svg class="hex-icon" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10 9 9 9 8 9"/>
+              </svg>
+              <div class="hex-number">01</div>
+            </div>
+          </div>
+        </div>
+        <div class="step-empty"></div>
+      </div>
+ 
+      <div class="step-connector"><div style="grid-column:2; width:2px; height:40px; background:rgba(255,106,0,0.3); margin:0 auto;"></div></div>
+ 
+      <!-- STEP 2 — RIGHT -->
+      <div class="step-row right">
+        <div class="step-empty"></div>
+        <div class="hex-wrap">
+          <div class="hexagon">
+            <svg class="hex-bg" viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="50,2 98,27 98,88 50,113 2,88 2,27" fill="#1a1a1a" stroke="#ff6a00" stroke-width="2"/>
+            </svg>
+            <div class="hex-inner">
+              <svg class="hex-icon" fill="none" stroke="#ff6a00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <rect x="1" y="3" width="15" height="13"/>
+                <path d="M16 8h4l3 3v5h-7V8z"/>
+                <circle cx="5.5" cy="18.5" r="2.5"/>
+                <circle cx="18.5" cy="18.5" r="2.5"/>
+              </svg>
+              <div class="hex-number" style="color:#ff6a00;">02</div>
+            </div>
+          </div>
+        </div>
+        <div class="step-content">
+          <h3>Book & Schedule Pickup</h3>
+          <p>Once your quote is confirmed, we schedule a convenient pickup. Our team handles all documentation, customs clearance, and compliance requirements.</p>
+        </div>
+      </div>
+ 
+      <div class="step-connector"><div style="grid-column:2; width:2px; height:40px; background:rgba(255,106,0,0.3); margin:0 auto;"></div></div>
+ 
+      <!-- STEP 3 — LEFT -->
+      <div class="step-row left">
+        <div class="step-content">
+          <h3>Cargo Picked Up & Loaded</h3>
+          <p>Our certified team collects your freight, carefully loads it using the right equipment, and prepares it for transport — fully insured and secured.</p>
+        </div>
+        <div class="hex-wrap">
+          <div class="hexagon">
+            <svg class="hex-bg" viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="50,2 98,27 98,88 50,113 2,88 2,27" fill="#ff6a00" stroke="rgba(255,106,0,0.3)" stroke-width="1"/>
+            </svg>
+            <div class="hex-inner">
+              <svg class="hex-icon" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M21 8V21H3V8"/>
+                <path d="M23 3H1v5h22V3z"/>
+                <line x1="12" y1="3" x2="12" y2="8"/>
+              </svg>
+              <div class="hex-number">03</div>
+            </div>
+          </div>
+        </div>
+        <div class="step-empty"></div>
+      </div>
+ 
+      <div class="step-connector"><div style="grid-column:2; width:2px; height:40px; background:rgba(255,106,0,0.3); margin:0 auto;"></div></div>
+ 
+      <!-- STEP 4 — RIGHT -->
+      <div class="step-row right">
+        <div class="step-empty"></div>
+        <div class="hex-wrap">
+          <div class="hexagon">
+            <svg class="hex-bg" viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="50,2 98,27 98,88 50,113 2,88 2,27" fill="#1a1a1a" stroke="#ff6a00" stroke-width="2"/>
+            </svg>
+            <div class="hex-inner">
+              <svg class="hex-icon" fill="none" stroke="#ff6a00" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+              <div class="hex-number" style="color:#ff6a00;">04</div>
+            </div>
+          </div>
+        </div>
+        <div class="step-content">
+          <h3>Real-Time Tracking</h3>
+          <p>Track your shipment live at every stage of its journey. Get real-time updates via our portal or SMS — you're always in the loop, no matter where your cargo is.</p>
+        </div>
+      </div>
+ 
+      <div class="step-connector"><div style="grid-column:2; width:2px; height:40px; background:rgba(255,106,0,0.3); margin:0 auto;"></div></div>
+ 
+      <!-- STEP 5 — LEFT -->
+      <div class="step-row left">
+        <div class="step-content">
+          <h3>Delivered & Confirmed</h3>
+          <p>Your freight is delivered safely to its destination. You receive a digital proof of delivery and a full shipment summary — completed on time, every time.</p>
+        </div>
+        <div class="hex-wrap">
+          <div class="hexagon">
+            <svg class="hex-bg" viewBox="0 0 100 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="50,2 98,27 98,88 50,113 2,88 2,27" fill="#ff6a00" stroke="rgba(255,106,0,0.3)" stroke-width="1"/>
+            </svg>
+            <div class="hex-inner">
+              <svg class="hex-icon" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="9 12 11 14 15 10"/>
+              </svg>
+              <div class="hex-number">05</div>
+            </div>
+          </div>
+        </div>
+        <div class="step-empty"></div>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+
+<!-- ── TRACKING ID POPUP ── -->
+<div class="tracking-popup-overlay" id="trackingPopup">
+  <div class="tracking-popup">
+    <button class="popup-close" id="popupClose">✕</button>
+ 
+    <div class="popup-icon">
+      <svg fill="none" stroke="#2ecc71" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10"/>
+        <polyline points="9 12 11 14 15 10"/>
+      </svg>
+    </div>
+ 
+    <h4>Quote <span style="color:#ff6a00;">Submitted!</span></h4>
+    <p>Your quote request has been received. Here is your unique tracking ID — save it to monitor your shipment status.</p>
+ 
+    <div class="tracking-id-box">
+      <label>Your Tracking ID</label>
+      <div class="tracking-id-value" id="popupTrackingId">—</div>
+      <button class="copy-btn" id="copyBtn">Copy</button>
+    </div>
+ 
+    <div class="popup-info-grid">
+      <div class="popup-info-item">
+        <label>Name</label>
+        <span id="popupName">—</span>
+      </div>
+      <div class="popup-info-item">
+        <label>Cargo Type</label>
+        <span id="popupCargo">—</span>
+      </div>
+      <div class="popup-info-item">
+        <label>Origin</label>
+        <span id="popupOrigin">—</span>
+      </div>
+      <div class="popup-info-item">
+        <label>Destination</label>
+        <span id="popupDest">—</span>
+      </div>
+      <div class="popup-info-item">
+        <label>Shipping Method</label>
+        <span id="popupShipping" class="accent">—</span>
+      </div>
+      <div class="popup-info-item">
+        <label>Weight</label>
+        <span id="popupWeight">—</span>
+      </div>
+    </div>
+ 
+    <div class="popup-note">
+      <strong>Important:</strong> Save your tracking ID above. You will need it to track your shipment on the Track Shipment section of our website. Our team will reach out within <strong>2–4 business hours</strong>.
+    </div>
+ 
+    <div class="popup-actions">
+      <button class="popup-btn-primary" id="goTrackBtn">Track Shipment →</button>
+      <button class="popup-btn-secondary" id="popupDismiss">Close</button>
+    </div>
+  </div>
+</div>
+ 
+<!-- ── QUOTE SECTION ── -->
+<section class="quote-section" id="quote-section">
+  <div class="quote-container">
+ 
+    <!-- LEFT -->
+    <div class="quote-left">
+      <div class="eyebrow">Free Estimate</div>
+      <h2>Get A <span>Free Quote</span></h2>
+      <p>Tell us about your shipment and we'll get back to you with a competitive, transparent quote — no hidden fees, no surprises.</p>
+ 
+      <div class="info-cards">
+        <div class="info-card">
+          <div class="info-card-icon">
+            <svg fill="none" stroke="#ff6a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <div class="info-card-text">
+            <h4>Quick Response</h4>
+            <p>We respond to all quote requests within 2–4 business hours.</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">
+            <svg fill="none" stroke="#ff6a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M12 2L3 7v5c0 5.25 3.9 10.15 9 11.35C17.1 22.15 21 17.25 21 12V7l-9-5z"/>
+            </svg>
+          </div>
+          <div class="info-card-text">
+            <h4>Fully Insured Cargo</h4>
+            <p>All shipments are fully insured from pickup to final delivery.</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">
+            <svg fill="none" stroke="#ff6a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <line x1="12" y1="1" x2="12" y2="23"/>
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+          </div>
+          <div class="info-card-text">
+            <h4>No Hidden Fees</h4>
+            <p>Our quotes are transparent — what you see is exactly what you pay.</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">
+            <svg fill="none" stroke="#ff6a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z"/>
+            </svg>
+          </div>
+          <div class="info-card-text">
+            <h4>24/7 Support</h4>
+            <p>Our logistics team is always available to assist you anytime.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- RIGHT FORM -->
+    <div class="quote-form">
+      <h3>Request A <span>Quote</span></h3>
+      <p>Fill in the details below and our team will prepare your personalized freight estimate.</p>
+ 
+      <div id="quoteFormWrap">
+        <div class="form-grid">
+ 
+          <div class="form-group">
+            <label>Full Name:</label>
+            <input type="text" id="fullName" placeholder="e.g. John Adeyemi">
+            <span class="field-error" id="err-fullName"></span>
+          </div>
+ 
+          <div class="form-group">
+            <label>Email Address:</label>
+            <input type="email" id="email" placeholder="e.g. john@company.com">
+            <span class="field-error" id="err-email"></span>
+          </div>
+ 
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" id="phone" placeholder="e.g. +234 808 229 9961">
+            <span class="field-error" id="err-phone"></span>
+          </div>
+ 
+          <div class="form-group">
+            <label>Cargo Type:</label>
+            <select id="cargoType">
+              <option value="">Select cargo type</option>
+              <option>General Goods</option>
+              <option>Perishables / Food</option>
+              <option>Electronics</option>
+              <option>Heavy Machinery</option>
+              <option>Hazardous Materials</option>
+              <option>Vehicles</option>
+              <option>Furniture</option>
+              <option>Other</option>
+            </select>
+            <span class="field-error" id="err-cargoType"></span>
+          </div>
+ 
+          <div class="form-group">
+            <label>Origin:</label>
+            <input type="text" id="origin" placeholder="City, Country">
+            <span class="field-error" id="err-origin"></span>
+          </div>
+ 
+          <div class="form-group">
+            <label>Destination :</label>
+            <input type="text" id="destination" placeholder="City, Country">
+            <span class="field-error" id="err-destination"></span>
+          </div>
+ 
+          <div class="form-group">
+            <label>Cargo Weight (kg)</label>
+            <input type="number" id="weight" placeholder="e.g. 500" min="1">
+            <span class="field-error" id="err-weight"></span>
+          </div>
+ 
+          <div class="form-group">
+            <label>Volume (Q)</label>
+            <input type="number" id="volume" placeholder="e.g. 10" min="0.1" step="0.1">
+            <span class="field-error" id="err-volume"></span>
+          </div>
+ 
+          <div class="form-group full">
+            <label>Preferred Shipping Method:</label>
+            <div class="ship-toggles" id="shippingMethod">
+              <label class="ship-toggle selected">
+                <input type="radio" name="shipping" value="Sea Freight" checked>
+                <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M2 20h20M5 20V10l7-7 7 7v10"/></svg>
+                Sea Freight
+              </label>
+              <label class="ship-toggle">
+                <input type="radio" name="shipping" value="Air Freight">
+                <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 16v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                Air Freight
+              </label>
+              <label class="ship-toggle">
+                <input type="radio" name="shipping" value="Road Freight">
+                <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                Road Freight
+              </label>
+              <label class="ship-toggle">
+                <input type="radio" name="shipping" value="Warehousing">
+                <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                Warehousing
+              </label>
+            </div>
+          </div>
+ 
+          <div class="form-group full">
+            <label>Additional Notes</label>
+            <textarea id="message" placeholder="Any special requirements, fragile items, customs info, preferred pickup date, etc."></textarea>
+          </div>
+ 
+        </div>
+ 
+        <button class="form-submit" id="submitBtn">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+          Submit Quote Request
+        </button>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+
+<section class="track-section">
+  <div class="track-container">
+ 
+    <!-- LEFT -->
+    <div class="track-left">
+      <div class="eyebrow">Real-Time Tracking</div>
+      <h2>Track Your <span>Shipment</span></h2>
+      <p>Enter your tracking ID below to get live updates on your shipment's location, status, and estimated time of arrival.</p>
+ 
+      <div class="track-form-wrap">
+        <div class="track-input-row">
+          <input
+            type="text"
+            id="trackingInput"
+            placeholder="e.g. LL-48291#A"
+            maxlength="18"
+            autocomplete="off"
+            spellcheck="false"
+          >
+          <button id="trackBtn" disabled data-mode="track">Track →</button>
+        </div>
+ 
+        <!-- Validation message -->
+        <div class="validation-msg hidden" id="validationMsg"></div>
+ 
+        <!-- Rules checklist (shows on focus) -->
+        <div class="validation-rules" id="validationRules">
+          <p>Tracking ID Requirements</p>
+          <div class="rule-item" id="rule-length">
+            <div class="rule-dot"></div>
+            Between 10 and 18 characters
+          </div>
+          <div class="rule-item" id="rule-letters">
+            <div class="rule-dot"></div>
+            2 to 4 letters (a–z, A–Z)
+          </div>
+          <div class="rule-item" id="rule-numbers">
+            <div class="rule-dot"></div>
+            At least 1 number (0–9)
+          </div>
+          <div class="rule-item" id="rule-special">
+            <div class="rule-dot"></div>
+            At least 1 special character (e.g. - # _ .)
+          </div>
+          <div class="rule-item" id="rule-nospace">
+            <div class="rule-dot"></div>
+            No spaces allowed
+          </div>
+        </div>
+ 
+        <!-- ETA result card -->
+        <div class="eta-card" id="etaCard">
+          <div class="eta-card-top">
+            <div class="eta-status">
+              <div class="eta-dot"></div>
+              <span class="eta-status-text">In Transit</span>
+            </div>
+            <span class="eta-id" id="etaIdDisplay"></span>
+          </div>
+          <div class="eta-grid">
+            <div class="eta-item">
+              <label>Origin</label>
+              <span></span>
+            </div>
+            <div class="eta-item">
+              <label>Destination</label>
+              <span></span>
+            </div>
+            <div class="eta-item">
+              <label>ETA</label>
+              <span class="highlight">3 Days Left</span>
+            </div>
+            <div class="eta-item">
+              <label>Carrier</label>
+              <span>Sea Freight</span>
+            </div>
+            <div class="eta-item">
+              <label>Last Update</label>
+              <span></span>
+            </div>
+            <div class="eta-item">
+              <label>Progress</label>
+              <span class="highlight">62%</span>
+            </div>
+          </div>
+        </div>
+        <button id="moreDetails" class="more-details">View Details →</button>
+      </div>
+    </div>
+
+        <!-- RIGHT MAP -->
+    <div class="track-right">
+      <div class="map-wrap">
+        <div class="map-label">Live Route Map</div>
+ 
+        <div id="liveMap"></div>
+ 
+        <!-- Placeholder before tracking -->
+        <div class="map-placeholder" id="mapPlaceholder">
+          <svg fill="none" stroke="rgba(255,106,0,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          <p>Enter a tracking ID to view live route</p>
+        </div>
+ 
+        <div class="map-legend">
+          <div class="legend-item"><div class="legend-dot" style="background:#3498db;"></div>Origin</div>
+          <div class="legend-item"><div class="legend-dot" style="background:#ff6a00;"></div>Current Location</div>
+          <div class="legend-item"><div class="legend-dot" style="background:#2ecc71;"></div>Destination</div>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+
+<footer>
+ 
+  <!-- MAIN FOOTER -->
+  <div class="footer-main">
+ 
+    <!-- BRAND -->
+    <div class="footer-brand">
+      <a href="#" class="footer-logo">Leslie<span>.</span>Logistics</a>
+      <p>Reliable freight and shipping solutions across the globe. From door-to-door delivery to complex supply chain management — we keep your cargo moving, safely and on time.</p>
+ 
+      <div class="footer-socials">
+        <!-- Facebook -->
+        <a href="#" class="social-btn" aria-label="Facebook">
+          <svg fill="#ccc" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+          </svg>
+        </a>
+        <!-- Twitter / X -->
+        <a href="#" class="social-btn" aria-label="Twitter">
+          <svg fill="#ccc" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 4l16 16M4 20L20 4" stroke="#ccc" stroke-width="2" stroke-linecap="round" fill="none"/>
+          </svg>
+        </a>
+        <!-- LinkedIn -->
+        <a href="#" class="social-btn" aria-label="LinkedIn">
+          <svg fill="none" stroke="#ccc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+        </a>
+        <!-- Instagram -->
+        <a href="#" class="social-btn" aria-label="Instagram">
+          <svg fill="none" stroke="#ccc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="0.5" fill="#ccc"/>
+          </svg>
+        </a>
+        <!-- WhatsApp -->
+        <a href="#" class="social-btn" aria-label="WhatsApp">
+          <svg fill="none" stroke="#ccc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+ 
+    <!-- QUICK LINKS -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Track Shipment</a></li>
+        <li><a href="#">Get a Quote</a></li>
+        <li><a href="#">Reviews</a></li>
+      </ul>
+    </div>
+ 
+    <!-- SERVICES -->
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#">Sea Freight</a></li>
+        <li><a href="#">Air Freight</a></li>
+        <li><a href="#">Road Freight</a></li>
+        <li><a href="#">Warehousing</a></li>
+        <li><a href="#">Door-to-Door</a></li>
+        <li><a href="#">Supply Chain</a></li>
+      </ul>
+    </div>
+ 
+    <!-- CONTACT & NEWSLETTER -->
+    <div class="footer-col footer-contact">
+      <h4>Contact Us</h4>
+ 
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg fill="none" stroke="#ff6a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 21.73 16z"/>
+          </svg>
+        </div>
+        <div class="contact-info">
+          <label>Phone</label>
+          <span>+234 808 229 9961</span>
+        </div>
+      </div>
+ 
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg fill="none" stroke="#ff6a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+        </div>
+        <div class="contact-info">
+          <label>Email</label>
+          <span>info@leslielogistics.com</span>
+        </div>
+      </div>
+ 
+      <div class="contact-item">
+        <div class="contact-icon">
+          <svg fill="none" stroke="#ff6a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+            <circle cx="12" cy="9" r="2.5"/>
+          </svg>
+        </div>
+        <div class="contact-info">
+          <label>Address</label>
+          <span>Lagos, Nigeria</span>
+        </div>
+      </div>
+ 
+      <!-- NEWSLETTER -->
+      <div class="footer-newsletter">
+        <p>Subscribe for shipping updates & offers:</p>
+        <div class="newsletter-row">
+          <input type="email" placeholder="Your email address">
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+ 
+  <!-- DIVIDER -->
+  <div class="footer-divider"></div>
+ 
+  <!-- BOTTOM BAR -->
+  <div class="footer-bottom">
+    <p>© 2025 <span>Leslie Logistics</span>. All rights reserved. Designed by <span>Victor Leslie</span>.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+  </div>
+ 
+  <!-- CERTIFICATIONS STRIP -->
+  <div class="footer-certs">
+    <div class="footer-certs-inner">
+      <div class="cert-badge">
+        <svg fill="none" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <path d="M12 2L3 7v5c0 5.25 3.9 10.15 9 11.35C17.1 22.15 21 17.25 21 12V7l-9-5z"/>
+        </svg>
+        Fully Insured
+      </div>
+      <div class="cert-dot"></div>
+      <div class="cert-badge">
+        <svg fill="none" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10"/>
+          <polyline points="9 12 11 14 15 10"/>
+        </svg>
+        ISO Certified
+      </div>
+      <div class="cert-dot"></div>
+      <div class="cert-badge">
+        <svg fill="none" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="2" y1="12" x2="22" y2="12"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+        </svg>
+        Global Network
+      </div>
+      <div class="cert-dot"></div>
+      <div class="cert-badge">
+        <svg fill="none" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10"/>
+          <polyline points="12 6 12 12 16 14"/>
+        </svg>
+        24/7 Support
+      </div>
+      <div class="cert-dot"></div>
+      <div class="cert-badge">
+        <svg fill="none" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <rect x="1" y="3" width="15" height="13"/>
+          <path d="M16 8h4l3 3v5h-7V8z"/>
+          <circle cx="5.5" cy="18.5" r="2.5"/>
+          <circle cx="18.5" cy="18.5" r="2.5"/>
+        </svg>
+        Est. 2009
+      </div>
+    </div>
+  </div>
+ 
+</footer>
+
+
+
+<script src="scripts/index.js"></script>
+</body>
+</html>
