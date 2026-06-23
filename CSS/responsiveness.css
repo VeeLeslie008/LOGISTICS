@@ -1,0 +1,410 @@
+/* ============================================================
+   LESLIE LOGISTICS — RESPONSIVENESS.CSS
+   Breakpoints:
+   - 1024px : Large tablets
+   - 768px  : Tablets / large phones
+   - 480px  : Small phones (iPhone 6/7/8)
+   - 375px  : iPhone 6/7/8 exact
+   - 320px  : iPhone 5 / very small phones
+   ============================================================ */
+
+
+/* ── HAMBURGER BUTTON ── */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 1001;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+/* Animate to X when open */
+.menu-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.menu-toggle.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.menu-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* ── MOBILE NAV OVERLAY (dark bg behind drawer) ── */
+.nav-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 998;
+  backdrop-filter: blur(3px);
+}
+.nav-overlay.active { display: block; }
+
+
+/* ============================================================
+   LARGE TABLETS — max 1024px
+   ============================================================ */
+@media (max-width: 1024px) {
+
+  /* HEADER */
+  header {
+    grid-template-columns: 1fr auto;
+    column-gap: 0;
+    padding: 12px 20px;
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 999;
+  }
+
+  /* Show hamburger, hide desktop nav */
+  .menu-toggle { display: flex; }
+  .main-nav { display: none; }
+
+  /* MOBILE NAV DRAWER — slides in from left */
+  .main-nav.open {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0; left: 0;
+    width: 75%;
+    max-width: 300px;
+    height: 100vh;
+    background: #111;
+    border-right: 2px solid #ff6a00;
+    z-index: 1000;
+    padding: 70px 28px 40px;
+    animation: slideIn 0.32s ease;
+    overflow-y: auto;
+  }
+
+  @keyframes slideIn {
+    from { transform: translateX(-100%); opacity: 0; }
+    to   { transform: translateX(0);    opacity: 1; }
+  }
+
+  .main-nav.open ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .main-nav.open ul li {
+    margin-inline: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .main-nav.open ul li a {
+    display: block;
+    padding: 16px 0;
+    font-size: 0.95rem;
+    letter-spacing: 2px;
+    color: #ccc;
+  }
+
+  .main-nav.open ul li a:hover { color: #ff6a00; }
+
+  /* Remove hover underline inside drawer */
+  .main-nav.open ul li a::after { display: none; }
+
+  .main-nav.open ul li button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    font-size: 0.88rem;
+    border-radius: 6px;
+  }
+
+  /* Push content below fixed header */
+
+  /* HERO */
+  section#home div:nth-of-type(1) { width: 80%; top: 18vh; }
+  section#home div:nth-of-type(2) { width: 80%; top: 60vh; grid-template-columns: 30% 30%; }
+  section#home b { font-size: 2.4rem; }
+  section#home p { font-size: 0.9rem; }
+
+  /* STATS */
+  .stats-section { height: auto; padding: 60px 30px; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+  /* WHO WE ARE */
+  .who-we-are { padding: 70px 40px; gap: 40px; }
+  .who-left h2 { font-size: 2.2rem; }
+
+  /* HOW IT WORKS */
+  .hiw-section { padding: 70px 40px; }
+  .step-row { grid-template-columns: 1fr 100px 1fr; }
+
+  /* QUOTE */
+  .quote-section { padding: 70px 30px; }
+  .quote-container { gap: 40px; }
+
+  /* TRACK */
+  .track-section { padding: 70px 30px; }
+  .track-container { gap: 40px; }
+}
+
+
+/* ============================================================
+   TABLETS & LARGE PHONES — max 768px
+   ============================================================ */
+@media (max-width: 768px) {
+
+  header { padding: 10px 16px; }
+  header nav:nth-of-type(1) a { font-size: 1.45rem; margin-left: 0; }
+
+  /* HERO */
+  section#home {
+    height: auto;
+    background-color: rgba(90, 88, 88, 0.178);
+    min-height: 80vh;
+    padding-bottom: 50px;
+  }
+
+  section#home div:nth-of-type(1) {
+    width: 90%;
+    position: relative;
+    top: 10vh; left: unset;
+    padding: 30px 20px 0;
+  }
+
+  section#home div:nth-of-type(2) {
+    width: 90%;
+    position: relative;
+    top: 8vh; left: unset;
+    padding: 20px 20px 0;
+    margin-top: 16px;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  section#home h2     { width: 100%; font-size: 0.76rem; }
+  section#home b      { font-size: 1.9rem; letter-spacing: 1px; }
+  section#home p      { width: 100%; font-size: 0.88rem; }
+  section#home button { font-size: 0.78rem; padding: 10px 8px; }
+
+  /* STATS */
+  .stats-section { padding: 50px 20px; height: auto; }
+  .stats-header h2 { font-size: 1.6rem; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .stat-card  { padding: 28px 16px; }
+  .stat-number { font-size: 2.8rem; }
+  .stat-suffix { font-size: 1.5rem; }
+
+  /* WHO WE ARE */
+  .who-we-are {
+    grid-template-columns: 1fr;
+    padding: 60px 24px;
+    gap: 50px;
+  }
+  .who-left { text-align: center; }
+  .who-left h2 { font-size: 2rem; }
+  .who-left p  { font-size: 0.9rem; }
+  .who-left-btns { flex-direction: column; align-items: center; gap: 16px; }
+  .who-right { height: 300px; width: 100%; }
+  .who-img-main { width: 80%; height: 250px; }
+  .who-img-badge { width: 130px; padding: 20px 14px; bottom: -10px; }
+  .who-img-badge .badge-num { font-size: 2.4rem; }
+
+  /* HOW IT WORKS */
+  .hiw-section { padding: 60px 24px; }
+  .hiw-header h2 { font-size: 2rem; }
+  .step-row { grid-template-columns: 1fr 80px 1fr; min-height: 120px; }
+  .hexagon  { width: 80px; height: 92px; }
+  .hex-number { font-size: 1.2rem; }
+  .hex-icon   { width: 22px; height: 22px; }
+  .step-content h3 { font-size: 1rem; }
+  .step-content p  { font-size: 0.8rem; }
+  .step-row.left .step-content  { padding-right: 14px; }
+  .step-row.right .step-content { padding-left: 14px; }
+
+  /* QUOTE */
+  .quote-section { padding: 60px 24px; }
+  .quote-container { grid-template-columns: 1fr; gap: 40px; }
+  .quote-left h2 { font-size: 2rem; }
+  .info-cards { gap: 12px; }
+  .info-card  { padding: 18px 14px; }
+
+  /* TRACK */
+  .track-section { padding: 60px 24px; }
+  .track-container { grid-template-columns: 1fr; gap: 36px; }
+  .track-left h2 { font-size: 2rem; }
+  .map-wrap { height: 360px; }
+  .eta-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+
+  /* POPUP */
+  .tracking-popup { 
+    padding: 32px 24px; 
+    min-height: 80vh;
+  }
+  
+  .popup-info-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .popup-actions { flex-direction: column; gap: 10px; }
+}
+
+
+/* ============================================================
+   SMALL PHONES — max 480px (iPhone 6/7/8)
+   ============================================================ */
+@media (max-width: 480px) {
+
+  header nav:nth-of-type(1) a { font-size: 1.25rem; }
+
+  section#home b { font-size: 1.6rem; }
+  section#home p { font-size: 0.82rem; }
+
+  section#home div:nth-of-type(2) {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  /* STATS */
+  .stats-grid  { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .stat-card   { padding: 22px 12px; border-radius: 12px; }
+  .stat-number { font-size: 2.3rem; }
+  .stats-section svg { width: 2rem; height: 2rem; }
+  .stats-header h2 { font-size: 1.4rem; }
+
+  /* WHO WE ARE */
+  .who-we-are  { padding: 50px 16px; }
+  .who-left h2 { font-size: 1.8rem; }
+  .who-right   { height: 270px; }
+  .who-img-main { width: 82%; height: 220px; }
+  .who-img-badge { width: 115px; padding: 16px 12px; }
+  .who-img-badge .badge-num { font-size: 2rem; }
+
+  /* HOW IT WORKS — collapse zigzag to vertical list */
+  .hiw-section { padding: 50px 16px; }
+  .hiw-header h2 { font-size: 1.8rem; }
+  .hiw-header p  { font-size: 0.84rem; }
+
+  .step-row {
+    grid-template-columns: 70px 1fr;
+    grid-template-rows: auto;
+    min-height: auto;
+    padding: 14px 0;
+    gap: 0 14px;
+  }
+
+  .step-row.left .hex-wrap,
+  .step-row.right .hex-wrap   { grid-column: 1; grid-row: 1; }
+
+  .step-row.left .step-content,
+  .step-row.right .step-content {
+    grid-column: 2; grid-row: 1;
+    text-align: left; padding: 0;
+  }
+
+  .step-row.left .step-empty,
+  .step-row.right .step-empty  { display: none; }
+  .step-row.left .step-content p { margin-left: 0; }
+
+  .hexagon     { width: 65px; height: 75px; }
+  .hex-number  { font-size: 1rem; }
+  .hex-icon    { width: 18px; height: 18px; }
+  .step-content h3 { font-size: 0.9rem; }
+  .step-content p  { font-size: 0.76rem; max-width: 100%; }
+  .step-connector  { height: 22px; }
+
+  /* QUOTE */
+  .quote-section { padding: 50px 16px; }
+  .quote-left h2 { font-size: 1.8rem; }
+  .form-grid { grid-template-columns: 1fr; }
+  .form-group.full { grid-column: 1; }
+  .ship-toggles { gap: 8px; }
+  .ship-toggle  { padding: 7px 10px; font-size: 0.78rem; }
+  .quote-form   { padding: 24px 18px; }
+
+  /* TRACK */
+  .track-section { padding: 50px 16px; }
+  .track-left h2 { font-size: 1.8rem; }
+  .map-wrap { height: 300px; }
+  .eta-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .eta-item span  { font-size: 0.78rem; }
+  .eta-item label { font-size: 0.62rem; }
+
+  /* POPUP */
+  .tracking-popup { padding: 28px 18px; width: 95%; }
+  .tracking-id-value { font-size: 1.5rem; letter-spacing: 2px; }
+  .popup-info-grid { grid-template-columns: 1fr; }
+}
+
+
+/* ============================================================
+   IPHONE 5 & VERY SMALL — max 320px
+   ============================================================ */
+@media (max-width: 320px) {
+
+  header { padding: 8px 10px; }
+  header nav:nth-of-type(1) a { font-size: 1.05rem; }
+  .menu-toggle span { width: 22px; }
+
+  section#home { margin-top: 52px; }
+  section#home b  { font-size: 1.3rem; }
+  section#home h2 { font-size: 0.66rem; }
+  section#home p  { font-size: 0.75rem; }
+  section#home div:nth-of-type(2) { grid-template-columns: 1fr 1fr; gap: 8px; }
+  section#home button { font-size: 0.66rem; padding: 7px 5px; }
+
+  /* STATS — single column */
+  .stats-grid  { grid-template-columns: 1fr; }
+  .stat-card   { padding: 20px 14px; }
+  .stat-number { font-size: 2rem; }
+  .stats-header h2 { font-size: 1.2rem; }
+  .stats-bottom { font-size: 0.62rem; gap: 4px; flex-wrap: wrap; justify-content: center; }
+
+  /* WHO WE ARE */
+  .who-we-are  { padding: 40px 12px; }
+  .who-left h2 { font-size: 1.5rem; }
+  .who-right   { height: 240px; }
+  .who-img-main  { width: 85%; height: 195px; }
+  .who-img-badge { width: 100px; padding: 12px 10px; right: -4px; }
+  .who-img-badge .badge-num   { font-size: 1.6rem; }
+  .who-img-badge .badge-label { font-size: 0.56rem; }
+  .btn-primary { padding: 10px 16px; font-size: 0.72rem; }
+
+  /* HOW IT WORKS */
+  .hiw-section { padding: 40px 12px; }
+  .hiw-header h2 { font-size: 1.5rem; }
+  .step-row  { grid-template-columns: 55px 1fr; gap: 0 10px; }
+  .hexagon   { width: 52px; height: 60px; }
+  .hex-number { font-size: 0.82rem; }
+  .hex-icon   { width: 14px; height: 14px; }
+  .step-content h3 { font-size: 0.8rem; }
+  .step-content p  { font-size: 0.7rem; }
+
+  /* QUOTE */
+  .quote-section { padding: 40px 12px; }
+  .quote-left h2  { font-size: 1.5rem; }
+  .quote-form     { padding: 18px 12px; }
+  .quote-form h3  { font-size: 1.2rem; }
+  .ship-toggle    { padding: 6px 8px; font-size: 0.7rem; }
+  .form-submit    { font-size: 0.76rem; padding: 12px; letter-spacing: 1px; }
+
+  /* TRACK */
+  .track-section { padding: 40px 12px; }
+  .track-left h2 { font-size: 1.5rem; }
+  .track-input-row input  { padding: 10px 10px; font-size: 0.8rem; }
+  .track-input-row button { padding: 10px 12px; font-size: 0.74rem; }
+  .map-wrap { height: 250px; }
+  .eta-grid { grid-template-columns: 1fr; gap: 8px; }
+  .eta-item span  { font-size: 0.78rem; }
+  .eta-item label { font-size: 0.62rem; }
+
+  /* POPUP */
+  .tracking-popup    { padding: 22px 12px; }
+  .tracking-id-value { font-size: 1.2rem; letter-spacing: 1px; }
+  .popup-info-grid   { grid-template-columns: 1fr; }
+  .tracking-popup h4 { font-size: 1.1rem; }
+  .tracking-popup p  { font-size: 0.76rem; }
+}
+
